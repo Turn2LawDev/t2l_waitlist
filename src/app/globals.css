@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer base {
   :root {
@@ -95,7 +98,11 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
- 
+
+.bg-card {
+  background-color: #131317 !important;
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -103,9 +110,7 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-/* Hide scrollbar for dropdown */
+}/* Hide scrollbar for dropdown */
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;

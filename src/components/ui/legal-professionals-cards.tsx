@@ -69,7 +69,7 @@ export default function LegalProfessionalsCards() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[600px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-gray-900 border border-gray-800 sm:rounded-2xl overflow-hidden shadow-2xl"
+              className="w-full max-w-[600px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-[#131317] border border-gray-800 sm:rounded-2xl overflow-hidden shadow-2xl"
             >
               <div className="p-8 overflow-y-auto max-h-full [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
                 <div className="flex items-center gap-4 mb-6">
@@ -135,7 +135,7 @@ export default function LegalProfessionalsCards() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="bg-card p-6 rounded-xl text-center border border-gray-800 hover:border-primary/30 cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 group"
+            className="bg-[#131317] p-6 rounded-xl text-center border border-gray-800 hover:border-primary/30 cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 group"
           >
             <motion.div
               layoutId={`icon-${card.title}-${id}`}

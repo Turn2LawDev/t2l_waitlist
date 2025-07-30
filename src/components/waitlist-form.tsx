@@ -345,7 +345,7 @@ export function WaitlistForm() {
       console.log("Sending data to backend:", payload);
       
       const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/signup/`,  // ← Using environment variable
+        `${process.env.NEXT_PUBLIC_API_URL}/api/signup/`,  
         payload,
         {
           headers: {

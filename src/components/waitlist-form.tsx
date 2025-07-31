@@ -344,7 +344,16 @@ export function WaitlistForm() {
     try {
       console.log("Sending data to backend:", payload);
       
-      
+      const response = await axios.post(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/signup/`,  
+        payload,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
       console.log("Backend response:", response.data);
       
       // Success: show success UI
